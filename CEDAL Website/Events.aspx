@@ -62,43 +62,42 @@
 
             <div class="row">
                 <div class="col-md-6">
-                <div class="event-img">
-							<a href="single-event.html">
-								<img src="./img/event-2.jpg" alt=""/>
-							</a>
-                    
+                <div class="event-img">                    
                     <asp:FileUpload runat="server" ID="fileuploadcontrol" />
-                    <asp:Button class="primary-button" runat="server" Text="Upload" ID="btnUpload" OnClick="btnUpload_Click"/>
-                    <br /><br />
-                    <asp:Label runat="server" ID="StatusLabel" Text="Upload Status: "></asp:Label>
 				</div>
-                </div>
-
-                <div class="col-md-6">
+                
                 <div class="event-content">
-            <ul>
-                <li>
-                    <asp:Label runat="server">Title</asp:Label>
-                    <asp:TextBox runat="server" ID="txtName"></asp:TextBox>
-                </li>
-                <li><i class="fas fa-calendar-week"></i><asp:Label runat="server">Date(s)</asp:Label>
-                    <asp:TextBox runat="server" ID="txtDate"></asp:TextBox>
-                </li>
-                <li><i class="fa fa-clock-o"></i><asp:Label runat="server">Time duration</asp:Label>
-                    <asp:TextBox runat="server" ID="txtTime"></asp:TextBox>
-                </li>
-                <li><i class="fa fa-map-marker"></i><asp:Label runat="server">Location</asp:Label>
-                    <asp:TextBox runat="server" ID="txtLocation"></asp:TextBox>
-                </li>
-                <li><i class="fa fa-pencil-square-o bigicon"></i><asp:Label runat="server">Description</asp:Label>
-                    <asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine"></asp:TextBox>
-                </li>
-            </ul>
+            <table id="myTABLE">
+  <tr>
+    <td><asp:Label runat="server">Title</asp:Label></td>
+    <td><asp:TextBox runat="server" ID="txtName"></asp:TextBox></td>
+  </tr>
+  <tr>
+    <td><i class="fas fa-calendar-week"></i><asp:Label runat="server">Date(s)</asp:Label></td>
+    <td><asp:TextBox runat="server" ID="txtDate"></asp:TextBox></td>
+  </tr>
+  <tr>
+    <td><i class="fa fa-clock-o"></i><asp:Label runat="server">Time duration</asp:Label></td>
+    <td><asp:TextBox runat="server" ID="txtTime"></asp:TextBox></td>
+  </tr>
+   <tr>
+    <td><i class="fa fa-map-marker"></i><asp:Label runat="server">Location</asp:Label></td>
+    <td><asp:TextBox runat="server" ID="txtLocation"></asp:TextBox></td>
+  </tr>
+   <tr>
+    <td><i class="fa fa-pencil-square-o bigicon"></i><asp:Label runat="server">Description</asp:Label></td>
+    <td><asp:TextBox runat="server" ID="txtDescription" TextMode="MultiLine"></asp:TextBox></td>
+  </tr>
+</table>
+                    <asp:Button ID="btnCreate" Text="Create Event" runat="server" class="primary-button"/>
                     </div>
                     </div>
                 </div>
-            <asp:Button ID="btnCreate" Text="Create Event" runat="server" class="primary-button"/>
-            
+ <script>
+function myFunction() {
+  document.getElementById("myTABLE").style.tableLayout = "fixed";
+}
+</script>
    
             <div class="row">
                 <div class="col-md-6">

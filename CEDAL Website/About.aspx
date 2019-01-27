@@ -84,7 +84,7 @@
 				<!-- /about content -->
 
 				<!-- about video -->
-				<div class="col-md-offset-1 col-md-6">
+				<div class="col-md-offset-1 col-md-6" style="margin-top:50px;">
 					<a href="#" class="about-video">
 							<img src="./img/all-smiles2.jpg" alt=""/>
 						</a>

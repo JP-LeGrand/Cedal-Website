@@ -73,9 +73,9 @@
 						<div class="row">
 							<div class="col-md-8">
 								<div class="home-content">
-									<h1>Save The Children</h1>
+									<h1>Help The Future</h1>
 									<p class="lead">Empower young people by placing special importance on their education. </p>
-									<a href="#" class="primary-button">View Activities</a>
+									<a href="#Activities" class="primary-button">View Activities</a>
 								</div>
 							</div>
 						</div>
@@ -269,7 +269,7 @@
 				<!-- section title -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="section-title text-center">
-						<h2 class="title">Our Activities</h2>
+						<h2 class="title" id="Activities">Our Activities</h2>
 						<p class="sub-title">Our activities operate in four major areas of intervention.</p>
 					</div>
 				</div>
