@@ -67,10 +67,16 @@
 				</div>
 
 				<!-- Nav menu -->
-				<ul class="navbar-menu nav navbar-nav navbar-right">
+				<<ul class="navbar-menu nav navbar-nav navbar-right">
 					<li><a href="Home.aspx">Home</a></li>
-					<li><a href="About.aspx">About</a></li>
+                    <li class="has-dropdown"><a href="#">About</a>
+						<ul class="dropdown">
+							<li><a href="About.aspx">Our History</a></li>
+                            <li><a href="OurWork.aspx">Our Work</a></li>
+						</ul>
+					</li>
 					<li><a href="Events.aspx">Events</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
 					<li><a href="Volunteer.aspx">Get Involved</a></li>
 					<li><a href="Login.aspx">Log In</a></li>
 				</ul>

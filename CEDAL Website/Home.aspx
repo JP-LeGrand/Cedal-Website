@@ -49,9 +49,16 @@
 				<!-- Nav menu -->
 				<ul class="navbar-menu nav navbar-nav navbar-right">
 					<li><a href="Home.aspx">Home</a></li>
-					<li><a href="About.aspx">About</a></li>
+                    <li class="has-dropdown"><a href="#">About</a>
+						<ul class="dropdown">
+							<li><a href="About.aspx">Our History</a></li>
+                            <li><a href="OurWork.aspx">Our Work</a></li>
+						</ul>
+					</li>
 					<li><a href="Events.aspx">Events</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
 					<li><a href="Volunteer.aspx">Get Involved</a></li>
+					<li><a href="Donate.aspx" class="btn btn-success causes-donate">Donate Now</a></li>
 					<li><a href="Login.aspx">Log In</a></li>
 				</ul>
 				<!-- Nav menu -->
@@ -217,48 +224,6 @@
 	</div>
 	<!-- /ABOUT -->
 
-            <!-- NUMBERS -->
-	<div id="numbers" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- number -->
-				<div class="col-md-4 col-sm-6">
-					<div class="number">
-						<i class="fa fa-smile-o"></i>
-						<h3>100</h3>
-						<span>Children assisted</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-md-4 col-sm-6">
-					<div class="number">
-						<i class="fa fa-money"></i>
-						<h3>R20,000</h3>
-						<span>Donated</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-md-4 col-sm-6">
-					<div class="number">
-						<i class="fa fa-handshake-o"></i>
-						<h3>3</h3>
-						<span>Volunteers</span>
-					</div>
-				</div>
-				<!-- /number -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /NUMBERS -->
-
             	<!-- Activities -->
 	<div id="causes" class="section">
 		<!-- container -->
@@ -283,17 +248,6 @@
                                 <img src="img/academic%20support.jpg" alt=""/>
 								</a>
 						</div>
-						<div class="causes-progress">
-							<div class="causes-progress-bar">
-								<div style="width: 87%;">
-									<span>87%</span>
-								</div>
-							</div>
-							<div>
-								<span class="causes-raised">Raised: <strong>R52.000</strong></span>
-								<span class="causes-goal">Goal: <strong>R90.000</strong></span>
-							</div>
-						</div>
 						<div class="causes-content">
 							<h3><a href="single-cause.html">Academic Support</a></h3>
 							<p>We provide volunteer tutors with the skills and qualifications to give private lessons to children living in the care setting. 
@@ -311,17 +265,6 @@
 							<a href="single-cause.html">
                                 <img src="img/good%20people%20skills.png" alt="" />
 								</a>
-						</div>
-						<div class="causes-progress">
-							<div class="causes-progress-bar">
-								<div style="width: 53%;">
-									<span>53%</span>
-								</div>
-							</div>
-							<div>
-								<span class="causes-raised">Raised: <strong>R52.000</strong></span>
-								<span class="causes-goal">Goal: <strong>R90.000</strong></span>
-							</div>
 						</div>
 						<div class="causes-content">
 							<h3><a href="single-cause.html">Training in good people skills</a></h3>
@@ -344,17 +287,6 @@
 								<img src="img/health%20awareness.png" alt=""/>
 							</a>
 						</div>
-						<div class="causes-progress">
-							<div class="causes-progress-bar">
-								<div style="width: 64%;">
-									<span>64%</span>
-								</div>
-							</div>
-							<div>
-								<span class="causes-raised">Raised: <strong>R52.000</strong></span>
-								<span class="causes-goal">Goal: <strong>R90.000</strong></span>
-							</div>
-						</div>
 						<div class="causes-content">
 							<h3><a href="single-cause.html">Adolescent health awareness</a></h3>
 							<p>The idea is to promote adolescent health literacy that helps to improve their health and reshape their habits to avoid unhealthy lifestyle choices.</p>
@@ -371,17 +303,6 @@
 							<a href="single-cause.html">
                                 <img src="img/girl%20education.jpg" alt=""/>
 							</a>
-						</div>
-						<div class="causes-progress">
-							<div class="causes-progress-bar">
-								<div style="width: 72%;">
-									<span>72%</span>
-								</div>
-							</div>
-							<div>
-								<span class="causes-raised">Raised: <strong>R52.000</strong></span>
-								<span class="causes-goal">Goal: <strong>R90.000</strong></span>
-							</div>
 						</div>
 						<div class="causes-content">
 							<h3><a href="single-cause.html">Re-integration of girls and young women that were left out of the education and economic system</a></h3>
@@ -496,7 +417,7 @@
 			<!-- row -->
 			<div class="row">
 				<!-- footer contact -->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="footer">
 						<div class="footer-logo">
 							<a class="logo" href="#"><img src="img/cedal%20emblem%20WHITE.png" alt=""/></a>
@@ -512,24 +433,10 @@
 				</div>
 				<!-- /footer contact -->
 
-				<!-- footer galery -->
-				<div class="col-md-4">
-					<div class="footer">
-						<h3 class="footer-title">Galery</h3>
-						<ul class="footer-galery">
-							<li><a href="#"><img src="./img/16thJune.jpg" alt=""/></a></li>
-							<li><a href="#"><img src="./img/enfants-afrique.jpg" alt=""/></a></li>
-							<li><a href="#"><img src="./img/dayofafricanchild.jpg" alt=""/></a></li>
-							<li><a href="#"><img src="./img/momandchild.jpg" alt=""/></a></li>
-							<li><a href="#"><img src="./img/galery-5.jpg" alt=""/></a></li>
-							<li><a href="#"><img src="./img/galery-6.jpg" alt=""/></a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /footer galery -->
+				
 
 				<!-- footer newsletter -->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="footer">
 						<h3 class="footer-title">Newsletter</h3>
 						<p>keep in touch with our latest updates and activities</p>
